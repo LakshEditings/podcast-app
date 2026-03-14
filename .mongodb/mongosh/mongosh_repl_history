@@ -1,0 +1,3 @@
+exit
+exot
+db.runCommand({ ping: 1 })

@@ -1,0 +1,107 @@
+// Mock data for the entire podcast app
+export const mockPodcasts = [
+    { id: 1, title: 'Tech Unplugged', creator: 'Sarah Chen', emoji: '💻', category: 'Technology', episodes: 48, subscribers: 12400, language: 'English', description: 'Exploring the latest in tech, AI, and the digital future.' },
+    { id: 2, title: 'Mindful Mornings', creator: 'David Park', emoji: '🧘', category: 'Wellness', episodes: 120, subscribers: 45000, language: 'English', description: 'Start your day with guided meditation and wellness insights.' },
+    { id: 3, title: 'Crime Files', creator: 'Julia Ross', emoji: '🔍', category: 'True Crime', episodes: 67, subscribers: 89000, language: 'English', description: 'Deep dives into the most mysterious unsolved cases.' },
+    { id: 4, title: 'Startup Stories', creator: 'Mike Johnson', emoji: '🚀', category: 'Business', episodes: 34, subscribers: 22000, language: 'English', description: 'Real stories from founders who built companies from scratch.' },
+    { id: 5, title: 'History Rewind', creator: 'Emma Wilson', emoji: '📜', category: 'History', episodes: 89, subscribers: 56000, language: 'English', description: 'Fascinating tales from the pages of history.' },
+    { id: 6, title: 'Comedy Hour', creator: 'Jake Torres', emoji: '😂', category: 'Comedy', episodes: 150, subscribers: 78000, language: 'English', description: 'Non-stop laughs with the funniest comedians around.' },
+    { id: 7, title: 'Science Daily', creator: 'Dr. Aisha Patel', emoji: '🔬', category: 'Science', episodes: 200, subscribers: 34000, language: 'Hindi', description: 'Breaking down complex science into bite-sized episodes.' },
+    { id: 8, title: 'Music Lab', creator: 'Carlos Rivera', emoji: '🎵', category: 'Music', episodes: 55, subscribers: 19000, language: 'Spanish', description: 'Behind the scenes of music production and artist stories.' },
+];
+
+export const mockEpisodes = [
+    { id: 1, podcastId: 1, title: 'The Future of AI in 2025', duration: '42:15', date: 'Feb 20, 2025', listens: 8500 },
+    { id: 2, podcastId: 1, title: 'Web3 Reality Check', duration: '38:42', date: 'Feb 13, 2025', listens: 6200 },
+    { id: 3, podcastId: 1, title: 'Quantum Computing Explained', duration: '55:30', date: 'Feb 6, 2025', listens: 12000 },
+    { id: 4, podcastId: 1, title: 'The Rise of Edge Computing', duration: '31:18', date: 'Jan 30, 2025', listens: 4300 },
+    { id: 5, podcastId: 2, title: 'Morning Breathing Techniques', duration: '22:10', date: 'Feb 21, 2025', listens: 15000 },
+    { id: 6, podcastId: 2, title: 'Mindfulness at Work', duration: '28:45', date: 'Feb 14, 2025', listens: 11000 },
+    { id: 7, podcastId: 3, title: 'The Vanishing Hiker', duration: '48:33', date: 'Feb 19, 2025', listens: 32000 },
+    { id: 8, podcastId: 3, title: 'Cold Case Reopened', duration: '52:11', date: 'Feb 12, 2025', listens: 28000 },
+    { id: 9, podcastId: 4, title: 'From Garage to IPO', duration: '45:00', date: 'Feb 18, 2025', listens: 9800 },
+    { id: 10, podcastId: 5, title: 'The Fall of Rome', duration: '58:22', date: 'Feb 17, 2025', listens: 18000 },
+];
+
+export const mockCategories = [
+    { name: 'Technology', emoji: '💻', count: 245 }, { name: 'Wellness', emoji: '🧘', count: 180 },
+    { name: 'True Crime', emoji: '🔍', count: 320 }, { name: 'Business', emoji: '🚀', count: 156 },
+    { name: 'History', emoji: '📜', count: 210 }, { name: 'Comedy', emoji: '😂', count: 290 },
+    { name: 'Science', emoji: '🔬', count: 175 }, { name: 'Music', emoji: '🎵', count: 130 },
+    { name: 'Sports', emoji: '⚽', count: 200 }, { name: 'Education', emoji: '📚', count: 165 },
+    { name: 'News', emoji: '📰', count: 300 }, { name: 'Fiction', emoji: '📖', count: 95 },
+];
+
+export const mockQuiz = {
+    title: 'Tech Unplugged: AI Quiz', passScore: 2, reward: 50,
+    questions: [
+        { question: 'What does GPT stand for?', options: ['General Processing Tool', 'Generative Pre-trained Transformer', 'Global Pattern Technology', 'Grouped Parallel Threading'], correct: 1 },
+        { question: 'Which company created ChatGPT?', options: ['Google', 'Meta', 'OpenAI', 'Microsoft'], correct: 2 },
+        { question: 'What is the primary function of a neural network?', options: ['Data storage', 'Pattern recognition', 'Web browsing', 'File compression'], correct: 1 },
+    ]
+};
+
+// 5 Quiz questions per episode — shown at end of episode on Listener side
+export const mockEpisodeQuizzes = {
+    1: [
+        { question: 'What year was the term "Artificial Intelligence" coined?', options: ['1943', '1956', '1967', '1980'], correct: 1 },
+        { question: 'Which AI model is known for generating images from text?', options: ['BERT', 'DALL-E', 'GPT-2', 'ResNet'], correct: 1 },
+        { question: 'What does LLM stand for?', options: ['Large Language Model', 'Linear Logic Machine', 'Linked Learning Module', 'Low Latency Memory'], correct: 0 },
+        { question: 'Which company developed the Transformer architecture?', options: ['OpenAI', 'Meta', 'Google', 'Apple'], correct: 2 },
+        { question: 'What is "hallucination" in AI?', options: ['A visual glitch', 'Generating false information confidently', 'An error in training', 'A type of neural network'], correct: 1 },
+    ],
+    2: [
+        { question: 'What blockchain does Ethereum use?', options: ['Proof of Work', 'Proof of Stake', 'Proof of Authority', 'Proof of Burn'], correct: 1 },
+        { question: 'What is a "smart contract"?', options: ['A legal document', 'Self-executing code on blockchain', 'An AI assistant', 'A type of wallet'], correct: 1 },
+        { question: 'Who created Bitcoin?', options: ['Elon Musk', 'Satoshi Nakamoto', 'Vitalik Buterin', 'Mark Zuckerberg'], correct: 1 },
+        { question: 'What does "DeFi" stand for?', options: ['Default Finance', 'Decentralized Finance', 'Digital Finance', 'Defined Finance'], correct: 1 },
+        { question: 'What is an NFT?', options: ['New File Type', 'Non-Fungible Token', 'Network Free Transfer', 'Node Function Tool'], correct: 1 },
+    ],
+    3: [
+        { question: 'How many qubits does a basic quantum computer need?', options: ['1', '2', '50+', 'Depends on task'], correct: 3 },
+        { question: 'What is quantum entanglement?', options: ['Particles linked regardless of distance', 'A type of encryption', 'Quantum error', 'Slow processing'], correct: 0 },
+        { question: 'What is superposition in quantum computing?', options: ['Being in multiple states simultaneously', 'Being faster', 'Having more memory', 'Being connected'], correct: 0 },
+        { question: 'Which company built the first 1000+ qubit processor?', options: ['Google', 'IBM', 'Microsoft', 'Intel'], correct: 1 },
+        { question: 'What problem can quantum computers solve faster?', options: ['Word processing', 'Factoring large numbers', 'Web browsing', 'Video editing'], correct: 1 },
+    ],
+};
+
+// Poll flags — polls placed at specific timestamps during episode playback
+// percentage = position on the timeline (0-100%), shown as popup on Listener side
+export const mockPollFlags = {
+    1: [
+        { id: 'p1', percentage: 25, question: 'Do you think AI will replace most jobs by 2030?', options: [{ text: 'Yes, definitely', votes: 342 }, { text: 'Only some jobs', votes: 567 }, { text: 'No way', votes: 201 }] },
+        { id: 'p2', percentage: 60, question: 'Which AI tool do you use the most?', options: [{ text: 'ChatGPT', votes: 890 }, { text: 'Gemini', votes: 456 }, { text: 'Claude', votes: 234 }, { text: 'None', votes: 120 }] },
+        { id: 'p3', percentage: 85, question: 'Should AI art be copyrightable?', options: [{ text: 'Yes', votes: 312 }, { text: 'No', votes: 445 }, { text: 'Depends', votes: 523 }] },
+    ],
+    2: [
+        { id: 'p4', percentage: 30, question: 'Have you invested in crypto?', options: [{ text: 'Yes, actively', votes: 234 }, { text: 'Just a little', votes: 456 }, { text: 'Never', votes: 310 }] },
+        { id: 'p5', percentage: 70, question: 'What\'s the future of Web3?', options: [{ text: 'It\'s the future', votes: 345 }, { text: 'Overhyped', votes: 567 }, { text: 'Too early to tell', votes: 388 }] },
+    ],
+    3: [
+        { id: 'p6', percentage: 40, question: 'Would you trust a quantum computer with your data?', options: [{ text: 'Absolutely', votes: 123 }, { text: 'Not yet', votes: 456 }, { text: 'Never', votes: 221 }] },
+    ],
+};
+
+export const mockPolls = [
+    { id: 1, question: 'What topic should we cover next?', options: [{ text: 'Blockchain & Crypto', votes: 234 }, { text: 'Cybersecurity Basics', votes: 189 }, { text: 'AR/VR Future', votes: 156 }, { text: 'Green Technology', votes: 201 }] },
+    { id: 2, question: 'Preferred episode length?', options: [{ text: '15-30 minutes', votes: 412 }, { text: '30-45 minutes', votes: 567 }, { text: '45-60 minutes', votes: 234 }, { text: '60+ minutes', votes: 89 }] },
+];
+
+// Points formula: Each correct answer = max 100 pts. Faster = more pts.
+// Points per Q = max(10, 100 - (timeTaken * 9))  where timeTaken is in seconds
+// Total points = sum of points for each correctly answered question
+export const mockLeaderboard = [
+    { rank: 1, name: 'Priya Kumar', avatar: '🥇', correct: 5, totalQ: 5, avgTime: 2.1, points: 475, streak: 5 },
+    { rank: 2, name: 'Alex Morgan', avatar: '🥈', correct: 5, totalQ: 5, avgTime: 4.3, points: 435, streak: 3 },
+    { rank: 3, name: 'Jordan Lee', avatar: '🥉', correct: 5, totalQ: 5, avgTime: 6.8, points: 395, streak: 7 },
+    { rank: 4, name: 'Sam Wilson', avatar: '👤', correct: 4, totalQ: 5, avgTime: 3.2, points: 356, streak: 1 },
+    { rank: 5, name: 'Taylor Davis', avatar: '👤', correct: 4, totalQ: 5, avgTime: 5.5, points: 310, streak: 2 },
+    { rank: 6, name: 'Mike Chen', avatar: '👤', correct: 3, totalQ: 5, avgTime: 7.1, points: 213, streak: 0 },
+    { rank: 7, name: 'Emma Garcia', avatar: '👤', correct: 3, totalQ: 5, avgTime: 3.0, points: 273, streak: 0 },
+    { rank: 8, name: 'Chris Park', avatar: '👤', correct: 2, totalQ: 5, avgTime: 8.2, points: 124, streak: 1 },
+    { rank: 9, name: 'Nina Patel', avatar: '👤', correct: 1, totalQ: 5, avgTime: 9.5, points: 44, streak: 0 },
+    { rank: 10, name: 'You', avatar: '⭐', correct: 0, totalQ: 5, avgTime: 0, points: 0, streak: 0, isUser: true },
+];
+
+export const languages = ['English', 'Hindi', 'Spanish', 'French', 'Tamil', 'Telugu', 'Japanese', 'Korean', 'Mandarin', 'German'];
